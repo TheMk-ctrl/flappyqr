@@ -1,6 +1,12 @@
 <html><head><style data-emotion="mantine" data-s=""></style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <script type="text/javascript">
+    var lockFunction =  window.screen.orientation.lock;
+if (lockFunction.call(window.screen.orientation, 'landscape')) {
+           console.log('Orientation locked')
+} else {
+            console.error('There was a problem in locking the orientation')
+}
     function DetectTheThing()
     {
        var uagent = navigator.userAgent.toLowerCase();
