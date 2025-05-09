@@ -1,0 +1,41 @@
+<html><head><style data-emotion="mantine" data-s=""></style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<script type="text/javascript">
+    function DetectTheThing()
+    {
+       var uagent = navigator.userAgent.toLowerCase();
+       if (uagent.search("iphone") > -1 || uagent.search("ipad") > -1 
+       || uagent.search("android") > -1 || uagent.search("blackberry") > -1
+       || uagent.search("webos") > -1)
+          window.location.replace('https://themk-ctrl.github.io/flappy/'); // Нет возможности вернуться
+    }
+</script>
+<style>
+        .image-box {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .image-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style></head>
+
+
+
+
+<body onload="DetectTheThing()">
+    <div class="image-box">
+        <img src="qrback.png" alt="Image">
+    </div>
+
+
+<div id="butlerRoot"><div class="butlerModal"></div></div></body></html>
